@@ -1,0 +1,41 @@
+# CMake build files
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# STM32CubeIDE files
+/.settings/
+/Debug/
+/Release/
+/MX_*
+*.launch
+*.elf
+*.bin
+*.hex
+*.map
+
+# IDE-specific (VSCode, CLion, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Other
+*.d
+*.o
+*.a
+*.lst
+*.dep
