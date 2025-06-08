@@ -9,7 +9,7 @@
 #include "IObserver.hpp"
 #include "ISubject.hpp"
 
-#include "IOTest2.hpp"
+//#include "IOTest2.hpp"
 
 
 
@@ -18,7 +18,7 @@
 int main()
 {
 	setSysTickFrequency(1_kHz);
-	test();
+//	test();
 //	MySubject s;
 //	MyObserver1 o1;
 //	MyObserver2 o2;

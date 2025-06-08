@@ -1,3 +1,4 @@
- text    data     bss     dec     hex 
- 11872     116    1600   13588    3514
- 12648     132    1592   14372    3824
+ 	     text    data     bss     dec     hex 
+ Без Output  6444     112    1576    8132    1fc4
+ CRTP 11872  116    1600   13588    3514
+ Virtual     132    1592   14372    3824
