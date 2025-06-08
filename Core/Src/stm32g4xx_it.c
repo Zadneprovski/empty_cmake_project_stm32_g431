@@ -6,6 +6,7 @@
   */
 #include "main.h"
 #include "stm32g4xx_it.h"
+#include "clock.h"
 
 /******************************************************************************/
 /*           Cortex-M4 Processor Interruption and Exception Handlers          */
@@ -86,6 +87,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+  sysTickInterrupt();
 }
 
 /******************************************************************************/
