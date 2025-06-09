@@ -12,19 +12,29 @@
 //#include "IOTest2.hpp"
 
 
-
-
-
 int main()
 {
 	setSysTickFrequency(1_kHz);
-//	test();
-//	MySubject s;
-//	MyObserver1 o1;
-//	MyObserver2 o2;
-//
-//	s.addObserver(o1);
-//	s.addObserver(o2);
+
+	MySubject s1;
+	MySubject s2;
+	MySubject2 s3;
+
+	MyObserver1 o1;
+	MyObserver2 o2;
+
+	s1.addObserver(o1);
+	s1.addObserver(o2);
+	s1.addObserver(s3);
+
+	s2.addObserver(o1);
+	s2.addObserver(o2);
+
+	s3.addObserver(o2);
+
+	s1.notifyAll(2);
+	s2.notifyAll(10);
+	s3.notifyAll(20);
 
 	while (1)
 	{
@@ -37,7 +47,6 @@ int main()
 //			libzm::trace(currentTicks, "ms");
 //			libzm::trace(sysTicks);
 			//prevTicks = sysTicks;
-//			s.notify(2);
 		}
 	}
 	return 0;
